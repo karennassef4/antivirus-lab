@@ -173,6 +173,10 @@ make antivirus
 make restore      
 make clean        
 
+#cron
+crontab -e
+23 * * * * /path/to/antivirus-cron.sh /path/to/dir /path/to/malicious_dir
+1 0 * * 5#3 /path/to/antivirus-cron.sh /path/to/dir /path/to/malicious_dir
 
 #whitelist
 
