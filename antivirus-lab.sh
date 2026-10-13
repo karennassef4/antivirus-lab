@@ -209,7 +209,5 @@ if [ "$action" = "1" ]; then
     cp "$selected" "$DIR/$filename"
     rm "$selected"
     echo "Restored $filename to $DIR."
-    
-    # Add to whitelist
     echo "$filename" >> whitelist.txt
 fi
